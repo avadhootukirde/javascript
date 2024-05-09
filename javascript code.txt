@@ -1,0 +1,16 @@
+function greetNames(names) {
+    // Loop through each name in the array
+    for (let i = 0; i < names.length; i++) {
+        const name = names[i];
+        // Check if the name starts with 'J' or 'j'
+        if (name.startsWith('J') || name.startsWith('j')) {
+            console.log(`Goodbye ${name}`);
+        } else {
+            console.log(`Hello ${name}`);
+        }
+    }
+}
+
+// Example usage:
+const namesArray = ["James", "Robert", "Julia", "Michael", "jennifer", "Laura"];
+greetNames(namesArray);
